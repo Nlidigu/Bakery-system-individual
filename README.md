@@ -76,6 +76,27 @@ The system manages bakery customers, employees, menu items, ingredients, orders,
 
 \## Project Status
 
+// BAKERY POS DATABASE
+// MongoDB collection creation
+
+use("bakerypos");
+
+db.createCollection("customers");
+db.createCollection("employees");
+db.createCollection("menu");
+db.createCollection("ingredients");
+db.createCollection("menu_ingredients");
+db.createCollection("orders");
+db.createCollection("order_items");
+db.createCollection("payments");
+db.createCollection("suppliers");
+db.createCollection("purchases");
+db.createCollection("purchase_items");
+
+print("Bakery POS collections created successfully");
+
+showCollections();
+
 
 
 Development in progress.
